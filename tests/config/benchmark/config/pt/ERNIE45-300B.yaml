@@ -92,6 +92,7 @@ metrics_output_path: ./output/paddle_distributed_logs/
 log_global_grad_norm: True
 enable_optimizer_timer: False
 gc_interval: 100000
+global_batch_size: 22680
 
 ernie_model_config:
     num_nextn_predict_layers: 1
