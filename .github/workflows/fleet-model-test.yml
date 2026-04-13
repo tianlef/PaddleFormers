@@ -512,7 +512,7 @@ jobs:
 
   integration-test-a100:
     needs: [check_documents_type, check-bypass]
-    if: ${{ needs.check_documents_type.outputs.is_md_only == 'false' && needs.check_skip.outputs.skip == 'false' }}
+    if: ${{ needs.check_documents_type.outputs.is_md_only == 'false' && needs.check_bypass.outputs.skip == 'false' }}
     name: Integration test (A100)
     runs-on:
       group: Distribute
